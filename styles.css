@@ -1,0 +1,19 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+    padding-top:60px;
+    background-color: hsl(0, 0%, 96%);
+    color:white;
+}
+body{
+    color: black;
+}
+.tallboi{
+    height: 2500px;
+    background-color: purple;
+}
+#temp-project{
+}
+#projects{
+    height: 1500px;
+}
