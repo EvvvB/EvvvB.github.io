@@ -1,108 +1,125 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Evan Ballesteros</title>
-    <!-- <meta name="description" content="The HTML5 Herald">
+<head>
+  <meta charset="utf-8">
+
+  <title>Evan Ballesteros</title>
+  <!-- <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="styles.css">
- 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+
   
-    <nav class="navbar is-dark is-fixed-top">
-      <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <!-- <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> -->
-          <h1 class ="is-size-5">Evan Ballesteros</h2>
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <p class="is-size-5">Evan Ballesteros</p>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item"  href="#">
+          About me
         </a>
-        <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#projects">
+            Projects
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#temp-project">
+              Temperature Project
+            </a>
+            <!-- <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a> -->
+          </div>
         </div>
       </div>
-    
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-    <a class="navbar-item" href="#">
-      About Me
-  </a>
-  <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link" href="#projects">
-      Projects
-    </a>
-  <div class="navbar-dropdown is-boxed">
-    <a class="navbar-item" href="#temp-project">
-      Temperature Charts
-    </a>
-  </div>
-</div>
-</div>
 
-<div class="navbar-end">
+      <div class="navbar-end">
         <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
+          <div class="buttons">
+            <!-- <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a> -->
+            <a class="button is-black" href="https://github.com/EvvvB" target="_blank">
+              <img src="GitHub_Logo_White.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    </p>
-    <p class="control">
-      <a class="button is-black" href="https://github.com/jgthms/bulma/releases/download/0.9.1/bulma-0.9.1.zip">
-        <!-- <span class="icon">
-          <i class="fas fa-download"></i>
-        </span> -->
-        <span>Github</span>
-      </a>
-    </p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-    </nav>   
-  </head>
+</head>
+
 <body>
 
-<div class = "container" id="bio">
-   <div class="container my-5">
-    <div class="notification is-primary has-text-black">
-     <h1 class="is-size-4"><u>About me:</u></h1>
-     <p class="my-2">
-      I am student studying computer science at SDSU class of 2022. Apart from school I have some experience programming,
-      mainly with web developement. I also am part of a fellowship position at SDSU researching video encoding. The projects that
-      follow show some of the work I do in my free time. 
-     </p>
-     <h1 class="is-size-4"><u>Technical Skills/Experience:</u></h1>
-     <p class="my-2">
-      Linux, python, javascript, html, css, c++
-     </p>
-    </div>
-  </div>
-</div>
-
-
-<div class="container my-3" id="projects">
-
-  <div class="container my-3" id="temp-project">
-    <div class="notification is-info has-text-black">
-      <h1 class="is-size-4"><a href="https://evvvb.herokuapp.com/temps"><u>Temperature Chart</u></a></h1>   
-      <!-- <h1 class="is-size-5"><u>Tech-Stack:</u></h1> -->
-      <p><u class="is-size-6"><b>Tech-Stack :</b></u>   Javascript, HTML, CSS, Node.js, Express, Mongodb, Python, charts.js </p>
-      <h1 class="is-size-5"><u>Description:</u></h1>
-     <p class="my-2">
-      This webapp functions as a tool to visualize the temperature in my room for the past 72 hours. Using a raspberry pi 
-      and a ds18b20 sensor, hourly data is sent directly from the raspberry pi to my server through a python script which is run through a cron job. 
-      The node.js server takes this data storing it into a mongodb server, though the server is not directly accessed at
-      the moment. In order to preserve the database requests there is a cache of the latest values on the node server.
-
-     </p>
+  <div class="container" id="bio">
+    <div class="container my-5">
+      <div class="notification is-primary has-text-black">
+        <h1 class="is-size-4"><u>About me:</u></h1>
+        <p class="my-2">
+          I am student studying computer science at SDSU class of 2022. Apart from school I have some experience
+          programming,
+          mainly with web development. I also am part of a fellowship position at SDSU researching video encoding. The
+          projects that
+          follow show some of the work I do in my free time.
+        </p>
+        <h1 class="is-size-4"><u>Technical Skills/Experience:</u></h1>
+        <p class="my-2">
+          Linux, python, javascript, html, css, c++
+        </p>
+      </div>
     </div>
   </div>
 
+
+  <div class="container my-3" id="projects">
+
+    <div class="container my-3" id="temp-project">
+      <div class="notification is-info has-text-black">
+        <h1 class="is-size-4"><a href="https://evvvb.herokuapp.com/temps"><u>Temperature Chart</u></a></h1>
+        <!-- <h1 class="is-size-5"><u>Tech-Stack:</u></h1> -->
+        <p><u class="is-size-6"><b>Tech-Stack</b></u>: Javascript, HTML, CSS, Node.js, Express, Mongodb, Python,
+          charts.js </p>
+        <h1 class="is-size-5"><u>Description</u>:</h1>
+        <p class="my-2">
+          This webapp functions as a tool to visualize the temperature in my room for the past 72 hours. Using a
+          raspberry pi
+          and a ds18b20 sensor, hourly data is sent directly from the raspberry pi to my server through a python script
+          which is run through a cron job.
+          The node.js server takes this data storing it into a mongodb server, though the server is not directly
+          accessed at
+          the moment. In order to preserve the database requests there is a cache of the latest values on the node
+          server.
+
+        </p>
+      </div>
+    </div>
+    <!--  
   <div class="container my-3" id="some1-project">
     <div class="notification is-info has-text-black">
      container 2
@@ -114,8 +131,59 @@
       container 3
     </div>
   </div>  
+-->
+  </div>
 
-</div>
+
+
+
+
+
+
 
 </body>
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+
+
+
+
+  $(document).ready(function () {
+
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function () {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+    });
+  });
+</script>
+
 </html>
