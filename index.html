@@ -83,64 +83,66 @@
     </nav>
   </head>
 
-  <body>
-    <div class="container" id="bio">
-      <div class="container my-5">
-        <div class="notification is-primary has-text-black">
-          <h1 class="is-size-5"><u>Contact Information:</u></h1>
-          <p class="my-2">Email: ballesteros.evan@gmail.com</p>
-          <h1 class="is-size-4"><u>About me:</u></h1>
-          <p class="my-2">
-            I am a student studying Computer Science at SDSU class of 2022.
-            Apart from school, I have some experience in programming which is
-            mainly centered around full-stack web development. I am also part of
-            a fellowship program at SDSU doing research in video encoding and
-            multimedia streaming. My focus for this research is mainly on the
-            AV1 video codec. At the moment, I am also in search of an internship
-            position in order to gain some real-world experience about
-            industry-level software engineering standards. Please contact me at
-            the email above if you have any interesting work or internship
-            opportunities.
-          </p>
+  <body >
+    <div class=".container" >
+      <div class="container" id="bio">
+        <div class="container my-5">
+          <div class="notification is-primary has-text-black">
+            <h1 class="is-size-5"><u>Contact Information:</u></h1>
+            <p class="my-2">Email: ballesteros.evan@gmail.com</p>
+            <h1 class="is-size-4"><u>About me:</u></h1>
+            <p class="my-2">
+              I am a student studying Computer Science at SDSU class of 2022.
+              Apart from school, I have some experience in programming which is
+              mainly centered around full-stack web development. I am also part
+              of a fellowship program at SDSU doing research in video encoding
+              and multimedia streaming. My focus for this research is mainly on
+              the AV1 video codec. At the moment, I am also in search of an
+              internship position in order to gain some real-world experience
+              about industry-level software engineering standards. Please
+              contact me at the email above if you have any interesting work or
+              internship opportunities.
+            </p>
 
-          <p class="my-2">
-            The project(s) that follow show some of the work I have personally
-            done in my free time. This does not including any tutorial projects
-            since I don't believe that is an honest representation of my own
-            skills.
-          </p>
-          <h1 class="is-size-4"><u>Technical Skills/Experience:</u></h1>
-          <p class="my-2">Linux, python, javascript, html, css, c++</p>
+            <p class="my-2">
+              The project(s) that follow show some of the work I have personally
+              done in my free time. This does not including any tutorial
+              projects since I don't believe that is an honest representation of
+              my own skills.
+            </p>
+            <h1 class="is-size-4"><u>Technical Skills/Experience:</u></h1>
+            <p class="my-2">Linux, python, javascript, html, css, c++</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container my-3" id="projects">
-      <div class="container my-3" id="temp-project">
-        <div class="notification is-info has-text-black">
-          <h1 class="is-size-4">
-            <a href="https://evvvb.herokuapp.com/temps"
-              ><u>Temperature Chart</u>(link)</a
-            >
-          </h1>
-          <!-- <h1 class="is-size-5"><u>Tech-Stack:</u></h1> -->
-          <p>
-            <u class="is-size-6"><b>Tech-Stack</b></u
-            >: Javascript, HTML, CSS, Node.js, Express, Mongodb, Python,
-            charts.js
-          </p>
-          <h1 class="is-size-5"><u>Description</u>:</h1>
-          <p class="my-2">
-            This web application functions as a tool to visualize the
-            temperature in my room for the past 72 hours. Using a raspberry pi
-            and a ds18b20 sensor, hourly data is sent directly from the
-            raspberry pi to my server through a python script which is run using
-            a cron job. The node.js server takes this data storing it into a
-            MongoDB server. Though, the database is directly accessed with each
-            page load at the moment. Instead, in order to preserve the database
-            requests and speed up loading time, there is a cache of the latest
-            values on the server instead.
-          </p>
+      <div class="container my-3" id="projects">
+        <div class="container my-3" id="temp-project">
+          <div class="notification is-info has-text-black">
+            <h1 class="is-size-4">
+              <a href="https://evvvb.herokuapp.com/temps"
+                ><u>Temperature Chart</u>(link)</a
+              >
+            </h1>
+            <!-- <h1 class="is-size-5"><u>Tech-Stack:</u></h1> -->
+            <p>
+              <u class="is-size-6"><b>Tech-Stack</b></u
+              >: Javascript, HTML, CSS, Node.js, Express, Mongodb, Python,
+              charts.js
+            </p>
+            <h1 class="is-size-5"><u>Description</u>:</h1>
+            <p class="my-2">
+              This web application functions as a tool to visualize the
+              temperature in my room for the past 72 hours. Using a raspberry pi
+              and a ds18b20 sensor, hourly data is sent directly from the
+              raspberry pi to my server through a python script which is run
+              using a cron job. The node.js server takes this data storing it
+              into a MongoDB server. Though, the database is directly accessed
+              with each page load at the moment. Instead, in order to preserve
+              the database requests and speed up loading time, there is a cache
+              of the latest values on the server instead.
+            </p>
+          </div>
         </div>
       </div>
       <!--  
