@@ -283,6 +283,68 @@ a:hover {
   margin-top: 24px;
 }
 
+.experience-section {
+  margin-top: 24px;
+}
+
+.experience-card {
+  margin-top: 18px;
+  padding: 24px;
+  border-top: 4px solid #3b82f6;
+}
+
+.experience-header {
+  display: flex;
+  gap: 18px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.experience-header .eyebrow {
+  margin-bottom: 6px;
+}
+
+.experience-header h3 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.experience-date {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.impact-list {
+  display: grid;
+  gap: 12px;
+  margin: 22px 0 0;
+  padding: 0;
+  color: #cbd5e1;
+  list-style: none;
+}
+
+.impact-list li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.impact-list li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #60a5fa;
+  content: "";
+}
+
 .project-card {
   margin-top: 18px;
   padding: 24px;
@@ -373,5 +435,13 @@ a:hover {
   .project-topline {
     display: grid;
     justify-items: start;
+  }
+
+  .experience-header {
+    display: grid;
+  }
+
+  .experience-date {
+    margin-top: 4px;
   }
 }
