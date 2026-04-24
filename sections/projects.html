@@ -1,0 +1,38 @@
+<section class="projects-section" id="projects">
+  <div class="section-heading">
+    <p class="eyebrow">Projects</p>
+    <h2>Personal work and experiments.</h2>
+  </div>
+
+  <article class="panel project-card" id="temp-project">
+    <div class="project-topline">
+      <p class="eyebrow">Web Application</p>
+      <a
+        href="https://evvvb.herokuapp.com/temps"
+        target="_blank"
+        rel="noreferrer"
+      >
+        View Project
+      </a>
+    </div>
+
+    <h3>Temperature Chart</h3>
+
+    <p class="tech-stack">
+      JavaScript, HTML, CSS, Node.js, Express, MongoDB, Python, Chart.js
+    </p>
+
+    <div class="prose">
+      <p>
+        This web application functions as a personal tool to visualize the
+        temperature in my room for the past 72 hours. Using a raspberry pi and a
+        ds18b20 sensor, hourly data is sent directly from the raspberry pi to my
+        server through a python script which is run using a cron job. The
+        node.js server takes this data storing it into a MongoDB server. Though,
+        the database is directly accessed with each page load at the moment.
+        Instead, in order to preserve the database requests and speed up loading
+        time, there is a cache of the latest values on the server instead.
+      </p>
+    </div>
+  </article>
+</section>
