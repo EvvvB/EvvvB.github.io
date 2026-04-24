@@ -91,92 +91,40 @@
           <a href="mailto:ballesteros.evan@gmail.com">
             ballesteros.evan@gmail.com
           </a>
+          <div class="social-links" aria-label="Social links">
+            <a
+              href="https://www.linkedin.com/in/evan-ballesteros/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Evan Ballesteros on LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27ZM5.32 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.53V9H7.1v11.45Z"
+                />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/EvvvB"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Evan Ballesteros on GitHub"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.25c-5.39 0-9.75 4.36-9.75 9.75 0 4.31 2.79 7.96 6.66 9.25.49.09.67-.21.67-.47v-1.83c-2.71.59-3.28-1.15-3.28-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.98.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.82.8.09-.62.34-1.05.61-1.29-2.16-.25-4.43-1.08-4.43-4.82 0-1.06.38-1.94 1-2.62-.1-.25-.43-1.24.1-2.58 0 0 .81-.26 2.68 1a9.16 9.16 0 0 1 4.88 0c1.86-1.26 2.68-1 2.68-1 .53 1.34.2 2.33.1 2.58.62.68 1 1.56 1 2.62 0 3.75-2.28 4.57-4.45 4.81.35.3.66.89.66 1.8v2.67c0 .26.18.56.67.47A9.75 9.75 0 0 0 21.75 12c0-5.39-4.36-9.75-9.75-9.75Z"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <div class="content-flow">
-        <section class="panel panel-primary">
-          <div class="section-heading">
-            <p class="eyebrow">About Me</p>
-            <h2>Building toward industry-level software engineering.</h2>
-          </div>
-
-          <div class="prose">
-            <p>
-              I am a student studying Computer Science at SDSU class of 2022.
-              Apart from school, I have some experience in programming which is
-              mainly centered around full-stack web development. I am also part
-              of a fellowship program at SDSU doing research in video encoding
-              and multimedia streaming. My focus for this research is mainly on
-              the AV1 video codec. At the moment, I am also in search of an
-              internship position in order to gain some real-world experience
-              in industry-level software engineering standards. Please
-              contact me at the email above if you have any information about
-              interesting work or internship opportunities.
-            </p>
-
-            <p>
-              The project(s) that follow show some of the work I have personally
-              done in my free time. This does not including any tutorial
-              projects since I do not believe that is an honest representation
-              of my own skills.
-            </p>
-          </div>
-
-          <div class="skills-block">
-            <h3>Technical Skills / Experience</h3>
-            <div class="skill-list">
-              <span>Linux</span>
-              <span>Python</span>
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>C++</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="projects-section" id="projects">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Personal work and experiments.</h2>
-          </div>
-
-          <article class="panel project-card" id="temp-project">
-            <div class="project-topline">
-              <p class="eyebrow">Web Application</p>
-              <a
-                href="https://evvvb.herokuapp.com/temps"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Project
-              </a>
-            </div>
-
-            <h3>Temperature Chart</h3>
-
-            <p class="tech-stack">
-              JavaScript, HTML, CSS, Node.js, Express, MongoDB, Python,
-              Chart.js
-            </p>
-
-            <div class="prose">
-              <p>
-                This web application functions as a personal tool to visualize
-                the temperature in my room for the past 72 hours. Using a
-                raspberry pi and a ds18b20 sensor, hourly data is sent directly
-                from the raspberry pi to my server through a python script which
-                is run using a cron job. The node.js server takes this data
-                storing it into a MongoDB server. Though, the database is
-                directly accessed with each page load at the moment. Instead, in
-                order to preserve the database requests and speed up loading
-                time, there is a cache of the latest values on the server
-                instead.
-              </p>
-            </div>
-          </article>
-        </section>
+        <div data-include="sections/about.html"></div>
+        <div data-include="sections/projects.html"></div>
       <!--
   <div class="container my-3" id="some1-project">
     <div class="notification is-info has-text-black">
@@ -213,5 +161,6 @@
         }
       });
     </script>
+    <script src="scripts/includes.js"></script>
   </body>
 </html>
