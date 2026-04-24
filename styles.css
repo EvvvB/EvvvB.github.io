@@ -374,6 +374,13 @@ a:hover {
   font-weight: 700;
 }
 
+.experience-level {
+  margin: 6px 0 0;
+  color: #94a3b8;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
 .impact-list {
   display: grid;
   gap: 12px;
