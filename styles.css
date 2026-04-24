@@ -254,6 +254,10 @@ a:hover {
   background: transparent;
 }
 
+.education-section {
+  background: transparent;
+}
+
 .projects-section {
   background: transparent;
 }
@@ -345,6 +349,84 @@ a:hover {
 .experience-card {
   padding: 24px;
   border-left: 0;
+}
+
+.education-card {
+  padding: 20px;
+}
+
+.education-header {
+  display: flex;
+  gap: 18px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.education-header h3 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(1.05rem, 2.4vw, 1.28rem);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.education-header p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+  font-size: 0.92rem;
+}
+
+.education-date {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.research-block,
+.coursework-block {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.research-block h4,
+.coursework-block h4 {
+  margin: 0 0 6px;
+  color: #f8fafc;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.research-block p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.course-list span {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+  padding: 5px 8px;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.26);
+}
+
+.course-list strong {
+  color: #f8fafc;
+  font-weight: 600;
 }
 
 .experience-header {
@@ -501,7 +583,15 @@ a:hover {
     display: grid;
   }
 
+  .education-header {
+    display: grid;
+  }
+
   .experience-date {
+    margin-top: 4px;
+  }
+
+  .education-date {
     margin-top: 4px;
   }
 }
