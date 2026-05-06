@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evan Ballesteros - Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar is-fixed-top site-nav"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item site-brand" href="index.html">Evan Ballesteros</a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> About </a>
+          <a class="navbar-item is-active" href="experience.html"> Experience </a>
+          <a class="navbar-item" href="projects.html"> Projects </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a
+              class="button github-button"
+              href="https://github.com/EvvvB"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Evan Ballesteros on GitHub"
+            >
+              <img src="GitHub_Logo_White.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="site-shell">
+      <section class="page-section experience-section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+        </div>
+
+        <article class="panel experience-card">
+          <div class="experience-header">
+            <div>
+              <p class="eyebrow">Software Engineer</p>
+              <h3>Meta</h3>
+              <p class="experience-level">
+                E3 (early-career), 2022-2024 · E4 (mid-level), 2024-2025
+              </p>
+            </div>
+            <p class="experience-date">June 2022 - Nov 2025</p>
+          </div>
+
+          <ul class="impact-list">
+            <li>
+              Built and operated low-latency, high-throughput ML inference systems
+              supporting 10K+ QPS real-time workloads. Delivering production text and multimodal ML systems, including image,
+              video, ASR, and embeddings.
+            </li>
+            <li>
+              Led the teams migration onto new model serving platforms, improving
+              deployment reliability and speed.
+            </li>
+            <li>
+              Supported both real-time and batch ML pipelines, balancing latency, throughput, and cost tradeoffs.
+            </li>
+            <li>
+              Integrated model outputs into backend systems for regulatory and
+              compliance workflows.
+            </li>
+            <li>
+              Implemented model metrics monitoring used for reliability tracking and on-call operations
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

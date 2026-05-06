@@ -1,5 +1,4 @@
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 92px;
   background: #0f172a;
 }
@@ -50,10 +49,18 @@ a:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 
+nav.site-nav a.navbar-item.is-active,
+nav.site-nav a.navbar-item.is-active:hover,
+nav.site-nav a.navbar-item.is-active:focus,
+nav.site-nav a.navbar-item.is-active:active {
+  color: #ffffff !important;
+  background: rgba(59, 130, 246, 0.2) !important;
+}
+
 .site-brand {
   color: #f8fafc;
-  font-size: 0.98rem;
-  font-weight: 700;
+  font-size: 1.08rem;
+  font-weight: 800;
   letter-spacing: 0;
 }
 
@@ -66,6 +73,13 @@ a:hover {
 .site-nav .navbar-burger:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.site-nav .navbar-burger.is-active,
+.site-nav .navbar-burger:active,
+.site-nav .navbar-burger:focus {
+  color: #ffffff;
+  background: rgba(59, 130, 246, 0.18);
 }
 
 .site-nav .navbar-dropdown {
@@ -87,7 +101,10 @@ a:hover {
   background: #050707;
 }
 
-.github-button:hover {
+.github-button:hover,
+.github-button:focus,
+.github-button:active,
+.github-button.is-active {
   background: #101819;
 }
 
@@ -594,4 +611,20 @@ a:hover {
   .education-date {
     margin-top: 4px;
   }
+}
+
+.navbar.site-nav .navbar-start > a.navbar-item.is-active,
+.navbar.site-nav .navbar-start > a.navbar-item.is-active:hover,
+.navbar.site-nav .navbar-start > a.navbar-item.is-active:focus,
+.navbar.site-nav .navbar-start > a.navbar-item.is-active:active {
+  color: #ffffff !important;
+  background-color: rgba(59, 130, 246, 0.24) !important;
+}
+
+.navbar.site-nav .button.is-active,
+.navbar.site-nav .button:active,
+.navbar.site-nav .button:focus {
+  color: #ffffff !important;
+  background-color: #101819 !important;
+  border-color: rgba(96, 165, 250, 0.42) !important;
 }

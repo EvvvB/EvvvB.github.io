@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <title>Evan Ballesteros</title>
-    <!-- <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -29,7 +24,7 @@
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item site-brand" href="#">Evan Ballesteros</a>
+        <a class="navbar-item site-brand" href="index.html">Evan Ballesteros</a>
 
         <a
           role="button"
@@ -46,19 +41,9 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="#about"> About me </a>
-          <a class="navbar-item" href="#education"> Education </a>
-          <a class="navbar-item" href="#experience"> Experience </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#projects"> Projects </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#temp-project">
-                Temperature Chart
-              </a>
-            </div>
-          </div>
+          <a class="navbar-item is-active" href="index.html"> About </a>
+          <a class="navbar-item" href="experience.html"> Experience </a>
+          <a class="navbar-item" href="projects.html"> Projects </a>
         </div>
 
         <div class="navbar-end">
@@ -122,25 +107,68 @@
         </div>
       </section>
 
-      <div class="content-flow">
-        <div data-include="sections/about.html"></div>
-        <div data-include="sections/education.html"></div>
-        <div data-include="sections/experience.html"></div>
-        <div data-include="sections/projects.html"></div>
-      <!--
-  <div class="container my-3" id="some1-project">
-    <div class="notification is-info has-text-black">
-     container 2
-    </div>
-  </div>
+      <section class="page-section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+        </div>
 
-  <div class="container my-3" id="some2-project">
-    <div class="notification is-info has-text-black">
-      container 3
-    </div>
-  </div>
--->
-      </div>
+        <article class="panel panel-primary">
+          <div class="prose">
+            <p>
+              I have 3.5 years of industry experience building backend and ML
+              infrastructure for both real-time and batch products. My work has focused on model
+              serving, low-latency inference, multimodal systems, and the backend
+              workflows needed to make machine learning useful in production.
+            </p>
+          </div>
+
+          <div class="skills-block">
+            <h3>Technical Skills / Experience</h3>
+            <div class="skill-list">
+              <span>ML Inference</span>
+              <span>Backend Systems</span>
+              <span>Model Serving</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>Linux</span>
+              <span>C++</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="page-section education-section" id="education">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+        </div>
+
+        <article class="panel education-card">
+          <div class="education-header">
+            <div>
+              <h3>San Diego State University</h3>
+              <p>Bachelor's Degree, Computer Science</p>
+            </div>
+            <p class="education-date">May 2022</p>
+          </div>
+
+          <div class="research-block">
+            <h4>Undergraduate Research</h4>
+            <p>
+              Undergraduate research in AV1 video encoding and multimedia streaming.
+            </p>
+          </div>
+
+          <div class="coursework-block">
+            <h4>Relevant Coursework</h4>
+            <div class="course-list">
+              <span><strong>Database Theory and Implementation</strong> CS514</span>
+              <span><strong>Machine Learning</strong> CS549</span>
+              <span><strong>Systems Programming</strong> CS530</span>
+              <span><strong>Data Science</strong> CS578</span>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <script>
@@ -163,6 +191,5 @@
         }
       });
     </script>
-    <script src="scripts/includes.js"></script>
   </body>
 </html>
