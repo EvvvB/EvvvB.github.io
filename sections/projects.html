@@ -1,36 +1,43 @@
 <section class="page-section projects-section" id="projects">
   <div class="section-heading">
     <p class="eyebrow">Projects</p>
-    <h2>Earlier personal work. This page is due for an update.</h2>
+    <h2>Personal systems work in data collection, backend services, and visualization.</h2>
   </div>
 
-  <article class="panel project-card project-card--archived" id="temp-project">
+  <article class="panel project-card" id="temp-project">
     <div class="project-topline">
-      <p class="eyebrow">Web Application</p>
-      <span class="project-status">Archived project</span>
+      <p class="eyebrow">Systems Project</p>
+      <span class="project-status">IoT telemetry</span>
     </div>
 
-    <h3>Temperature Chart</h3>
+    <h3>Temperature Telemetry Pipeline</h3>
 
     <p class="project-note">
-      Historical personal project; the hosted demo is no longer running.
+      Sensor ingestion, storage, caching, and a 72-hour time-series
+      visualization for home temperature data.
     </p>
 
     <p class="tech-stack">
       JavaScript, HTML, CSS, Node.js, Express, MongoDB, Python, Chart.js
     </p>
 
-    <div class="prose">
-      <p>
-        This web application functions as a personal tool to visualize the
-        temperature in my room for the past 72 hours. Using a raspberry pi and a
-        ds18b20 sensor, hourly data is sent directly from the raspberry pi to my
-        server through a python script which is run using a cron job. The
-        node.js server takes this data storing it into a MongoDB server. Though,
-        the database is directly accessed with each page load at the moment.
-        Instead, in order to preserve the database requests and speed up loading
-        time, there is a cache of the latest values on the server instead.
-      </p>
-    </div>
+    <ul class="impact-list project-list">
+      <li>
+        Captured hourly readings from a Raspberry Pi and DS18B20 sensor with a
+        scheduled Python collector.
+      </li>
+      <li>
+        Built a Node.js and Express service backed by MongoDB for temperature
+        storage and retrieval.
+      </li>
+      <li>
+        Added server-side caching of recent values to reduce database reads and
+        improve page-load performance.
+      </li>
+      <li>
+        Rendered the latest 72 hours of sensor data as a Chart.js time-series
+        view.
+      </li>
+    </ul>
   </article>
 </section>
