@@ -5,7 +5,7 @@
     <title>Evan Ballesteros | Projects</title>
     <meta
       name="description"
-      content="Selected personal systems project from Evan Ballesteros, including sensor ingestion, backend services, caching, MongoDB storage, and data visualization."
+      content="Selected personal and academic full-stack systems projects from Evan Ballesteros, including sensor ingestion, backend services, data storage, automation, and frontend data visualization."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -56,20 +56,23 @@
       <section class="page-section projects-section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
-          <h2>Personal systems work in data collection, backend services, and visualization.</h2>
+          <h2>
+            Personal full-stack systems work in data collection, backend
+            services, and visualization.
+          </h2>
         </div>
 
         <article class="panel project-card" id="temp-project">
           <div class="project-topline">
-            <p class="eyebrow">Systems Project</p>
+            <p class="eyebrow">Full-Stack Systems Project</p>
             <span class="project-status">IoT telemetry</span>
           </div>
 
           <h3>Temperature Telemetry Pipeline</h3>
 
           <p class="project-note">
-            Sensor ingestion, storage, caching, and a 72-hour time-series
-            visualization for home temperature data.
+            Sensor ingestion, API service, MongoDB storage, server-side caching,
+            and a 72-hour time-series frontend for home temperature data.
           </p>
 
           <p class="tech-stack">
@@ -82,16 +85,58 @@
               with a scheduled Python collector.
             </li>
             <li>
-              Built a Node.js and Express service backed by MongoDB for
-              temperature storage and retrieval.
+              Built a Node.js and Express API backed by MongoDB for temperature
+              storage and retrieval.
             </li>
             <li>
               Added server-side caching of recent values to reduce database
               reads and improve page-load performance.
             </li>
             <li>
-              Rendered the latest 72 hours of sensor data as a Chart.js
-              time-series view.
+              Rendered the latest 72 hours of sensor data in a browser-based
+              Chart.js time-series view.
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel project-card" id="plant-watering-project">
+          <div class="project-topline">
+            <p class="eyebrow">Full-Stack Systems Project</p>
+            <span class="project-status">SDSU group project</span>
+          </div>
+
+          <h3>Autonomous Plant Watering Device / Web App</h3>
+
+          <p class="project-note">
+            Soil-moisture sensing, Raspberry Pi automation, Node.js REST API
+            storage, and a React dashboard for watering activity and moisture
+            trends.
+          </p>
+
+          <p class="tech-stack">
+            Python, Raspberry Pi, Node.js, REST APIs, React.js, Highcharts
+          </p>
+
+          <ul class="impact-list project-list">
+            <li>
+              Designed and implemented an autonomous plant watering system that
+              used soil-moisture readings to determine when plants needed water.
+            </li>
+            <li>
+              Connected a soil sensor to a Raspberry Pi and scheduled a Python
+              script with cron to check moisture levels at designated intervals.
+            </li>
+            <li>
+              Analyzed sensor readings in Python and triggered a water pump
+              when moisture levels fell below the target threshold.
+            </li>
+            <li>
+              Sent moisture readings and watering events to a Node.js REST API
+              for storage and retrieval by the web application.
+            </li>
+            <li>
+              Visualized moisture and watering-time data in a React.js
+              interface using Highcharts.
             </li>
           </ul>
         </article>

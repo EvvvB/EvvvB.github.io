@@ -488,6 +488,10 @@ nav.site-nav a.navbar-item.is-active:active {
   line-height: 1.45;
 }
 
+.project-card + .project-card {
+  margin-top: 22px;
+}
+
 .tech-stack {
   margin: 18px 0 0;
   padding: 12px 14px;
