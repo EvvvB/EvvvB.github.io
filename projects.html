@@ -5,7 +5,7 @@
     <title>Evan Ballesteros | Projects</title>
     <meta
       name="description"
-      content="Selected personal and academic full-stack systems projects from Evan Ballesteros, including sensor ingestion, backend services, data storage, automation, and frontend data visualization."
+      content="Selected personal and academic full-stack systems projects from Evan Ballesteros, including edge ML computer vision, sensor ingestion, backend services, data storage, automation, and frontend data visualization."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -57,10 +57,51 @@
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
           <h2>
-            Personal full-stack systems work in data collection, backend
+            Personal systems work in edge ML, data collection, backend
             services, and visualization.
           </h2>
         </div>
+
+        <article class="panel project-card" id="edge-vision-project">
+          <div class="project-topline">
+            <p class="eyebrow">Edge ML Systems Project</p>
+            <span class="project-status">AI-assisted development</span>
+          </div>
+
+          <h3>Edge ML Vision Classifier</h3>
+
+          <p class="project-note">
+            Edge vision system spanning microcontroller cameras, a Raspberry Pi
+            inference gateway, AWS, and a React dashboard. Built with
+            AI-assisted engineering, owning the architecture and technical
+            decisions.
+          </p>
+
+          <p class="tech-stack">
+            Python, C++, FastAPI, PostgreSQL, AWS, Docker, React, TensorFlow
+            Lite Micro, YOLO, Raspberry Pi
+          </p>
+
+          <ul class="impact-list project-list">
+            <li>
+              Deployed quantized FOMO detectors on Nicla Vision and ESP32-S3
+              cameras, using motion detection to run inference only where the
+              scene changed.
+            </li>
+            <li>
+              Reduced ESP32-S3 inference latency 28x (3.3s to 117ms) by
+              switching to Espressif's optimized ESP-NN kernels.
+            </li>
+            <li>
+              Built a Raspberry Pi gateway that converts raw frames, re-scores
+              them with YOLO, and forwards results to the cloud with retries.
+            </li>
+            <li>
+              Shipped a FastAPI, PostgreSQL, and S3 backend on AWS with a React
+              dashboard for review, remote capture, and model evaluation.
+            </li>
+          </ul>
+        </article>
 
         <article class="panel project-card" id="temp-project">
           <div class="project-topline">
